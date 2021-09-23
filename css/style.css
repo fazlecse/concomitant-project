@@ -1,0 +1,466 @@
+/* Common CSS */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f1f1f;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container{
+    max-width: 960px;
+    width: 96%;
+    margin: 0 auto;  
+}
+/* .content{
+    max-width: 900px;
+    width: 96%;
+    margin: 0 auto;  
+} */
+
+/* START Header SECTION */
+#header_area{
+    background-color: #ffffff;
+
+    border-top: 5px solid #81b300;
+}
+.inner_header{
+    /* overflow: hidden; */
+    padding: 0 30px;
+    content: "";
+    clear: both;
+    display: table;
+}
+.logo_area{
+    width: 300px;
+    float: left;
+    padding-top: 30px;
+}
+.right_header_area{
+    width: 590px;
+    float: right;
+}
+.social_area{
+    background-color: #81b300;
+    width: auto;
+    float: right;
+    padding: 15px 10px;
+    border-radius: 0 0 15px 15px;
+    
+}
+.social_area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.social_area ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.social_area ul li a {
+	display: block;
+}
+.social_area ul li a i{
+	background-color: #1f1f1f;
+	width: 35px;
+	padding-top: 9px;
+	color: #ffffff;
+	font-size: 15px;
+	/* display: block; */
+	height: 25px;
+	text-align: center;
+	border-radius: 25px;
+    transition: .5s;
+}
+.social_area ul li a:hover{
+    background-color: #81b300;
+}
+
+.social_area ul li a:hover i.fa-linkedin-in{
+    background-color: #0076B2;
+}
+.social_area ul li a:hover i.fa-twitter{
+    background-color: #55ACED;
+}
+.social_area ul li a:hover i.fa-pinterest{
+    background-color: #BD081C;
+}
+.social_area ul li a:hover i.fa-google-plus{
+    background-color: #DB543F;
+}
+.social_area ul li a:hover i.fa-rss{
+    background-color: #F58023;
+}
+.top_menu{
+    width: 100%;
+    float: right;
+    text-align: right;
+    margin: 15px 0 0 0;
+}
+.top_menu ul{
+    list-style: none;
+}
+.top_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+.top_menu ul li::after{
+    position: absolute;
+    content: "|";
+    right: -10px;
+    top: -1px; 
+    color:#000;
+}
+.top_menu ul li:last-child::after{
+    display: none;
+}
+.top_menu ul li a{
+    color: #000;
+    text-decoration: none;
+    font-family: georgia;
+    font-size: 13px;
+    font-weight: normal;
+}
+.top_menu ul li a:hover{
+    color: #81b300;
+    text-decoration: underline; 
+}
+/* END Header SECTION */
+
+/* START NAV SECTION */
+#nav{
+    background-color: #81b300;
+    padding: 15px 0;
+}
+.inner_menu{
+    /* overflow: hidden; */
+    /* content: "";
+    clear: both;
+    display: table; */
+    padding: 0 15px;
+    min-height: 28px;
+}
+.menu_area{
+    float: left;
+    max-width: 600px;
+    width: 79%;
+    padding-top: 5px;
+}
+.menu_area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;    
+}
+.menu_area ul a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;    
+}
+
+
+
+/* SERACH AREA */
+/* .search_area{
+    float: right;
+    max-width: 280px;
+    width: 21%;
+}
+.search_area input{
+    width: 69%;
+    padding: 5px 1%;
+    border: 1px solid #ddd;
+    color: #000;
+    float: left;
+}
+.search_area input[type="submit"]{
+    width: 27%;
+    float: right;
+    max-width: 280px;
+    padding: 5px 1%;
+    color: #81b300;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+}
+.search_area input[type="submit"]:hover{
+    background-color: #000;
+    border: border 1px solid #000;
+    color: #fff;
+} */
+/* Start Nav Section */
+.nav {
+	background-color: #81b300;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.left-nav {
+	padding: 0 20px;
+}
+.navmenu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navmenu a {
+	text-decoration: none;
+	padding: 20px 5px;
+	display: inline-block;
+	font-size: 15px;
+	font-family: arial;
+    font-weight: 400;
+}
+.navmenu a:hover{
+    background-color: #ffffff;
+}
+.right-nav {
+	padding: 0 20px;
+}
+.input {
+	height: 30px;
+	outline: 0;
+	border: 0;
+	padding: 3px;
+	display: inline-block;
+}
+.submit {
+	width: 46px;
+	height: 35px;
+	transition: .3s;
+}
+.submit:hover{
+    background-color: #000000b9;
+    color: #fff;
+}
+
+/* Drop-down section */
+.dropdown{
+    position: relative;
+}
+.sub-menu {
+	position: absolute;
+	width: 132px;
+	background-color: #81B300;
+    border: 1px solid #000;
+    display: none;
+    z-index: 1;
+}
+.sub-menu a {
+	display: block;
+	font-size: 15px;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+.dropdown:hover .sub-menu,
+.sub-dropdown:hover .sub-sub-menu{
+    display: block;
+    /* z-index: 1; */
+}
+.sub-dropdown{
+    position: relative;
+}
+.sub-sub-menu {
+	position: absolute;
+	background-color: #81B300;
+	font-size: 15px;
+	top: 0;
+	right: -138px;
+    display: none;
+    border: 1px solid #000;
+}
+/* Drop-down section */
+
+/* End Nav Section */
+/* Slider area start */
+#slider_area{
+    background-color: #f2f2f2;
+}
+.slider_inner{
+    width: 880px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.bx-wrapper{
+    margin-bottom: 40px !important;
+}
+/* Slider area End */
+
+/* Strat Service Section */
+#service_section{
+    background-color: #ffffff;
+    padding: 45px 0;
+}
+.service_area{
+    content: "";
+    clear: both;
+    display: table;
+}
+.child_service {
+	float: left;
+	text-align: center;
+	padding: 0 1% 10px;
+	margin: 0 1%;
+	width: 21%;
+}
+.child_service h3{
+    color: #81b300;
+    font-size: 18px;
+}
+.child_service p{
+    color: #878787;
+    font-size: 13px;
+    font-weight: normal;
+}
+/* End Service Section */
+/* Start Work Section */
+#work_section{
+    background-color: #fff;
+}
+.inner_work {
+	border-top: 1px solid #e2e2e2;
+	padding: 45px 0;
+    content: "";
+    clear: both;
+    display: table;
+}
+.child_work {
+	float: left;
+	margin: 0px 1% 10px;
+	width: 21%;
+	padding:1%;
+}
+.child_work img{
+    border: 1px solid #e2e2e2;
+    padding: 4px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.child_work h3{
+    font-size: 18px;
+    color: #444444;
+}
+.child_work p{
+    columns: #878787;
+    font-size: 14px;
+}
+.child_work a{
+    color: #81b300;
+    font-size: 13px;
+    text-decoration: none;
+    float: right;
+}
+.child_work a:hover{
+    color: #000 ;
+}
+/* End Work Section */
+/* Start Footer Section */
+#footer_area{
+    background-color: #3b3b3b;
+}
+.inner_footer {
+	padding: 10px 0;
+	content: "";
+	clear: both;
+	display: table;
+}
+.child_footer {
+	float: left;
+	margin: 1% 1% 10px;
+	width: 21%;
+	padding: 0% 1%;
+}
+.child_footer h3{
+    color: #666666;
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: bold;
+}
+.child_footer p {
+	color: #999999;
+	font-size: 13px;
+	margin: 0;
+}
+.child_footer ul{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
+.child_footer li{
+    display: block;
+    border-bottom: 1px solid rgb(222, 222, 222,.1);
+}
+.child_footer li a{
+    text-decoration: none;
+    color: #999999;
+    display: block;
+    padding: 5px 0px;
+}
+.child_footer li a:hover{
+    color: #81b300;
+}
+.child_footer h4{
+    margin-bottom: 0px;
+}
+.child_footer h4 a{
+    color: #999999;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0px;
+}
+.child_footer h6{
+    margin: 0px;
+    color: #999999;
+}
+.read_more{
+   float: right;
+    color: #81b300;
+}
+.read_more:hover{
+    color: #878787;
+}
+.form{
+    padding: 10px;
+}
+.input1 {
+	width: 180px;
+	background: #1F1F1F;
+	color: #999999;
+	outline: none;
+	margin: 0;
+	border: none;
+	padding: 6px;
+	border-radius: 6px;
+    margin-bottom: 12px;
+}
+.send {
+	color: #81b300;
+	font-size: 13px;
+	background-color: #1F1F1F;
+	border: #ffdead;
+	width: 80px;
+	padding: 5px;
+	border-radius: 6px;
+}
+.send:hover {
+    color: #878787;
+}
+.copyright_area{
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    color: #737373;
+    font-size: 12px;
+}
+
+/* End Footer Section */
